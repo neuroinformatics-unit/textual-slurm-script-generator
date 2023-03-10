@@ -1,0 +1,68 @@
+#body {
+    layout: grid;
+    grid-size: 1 2;
+    grid-gutter: 1;
+    grid-rows: 70% 30%;
+    padding: 1 0 1 0;
+}
+
+FormInput, FormOutput {
+    width: 100%;
+    height: 100%;
+    background: $panel;
+    color: $text;
+}
+.form_horizontal {
+    height: 3;
+}
+.time {
+    width: 10%;
+}
+Label {
+    width: auto;
+    height: 3;
+    content-align: center middle;
+}
+ListView {
+    width: 100%;
+    height: 9;
+    align-horizontal: center;
+    margin: 0 1;
+}
+#listview_container{
+    height: 12;
+}
+FormInput > .buttons {
+    width: 100%;
+    height: 5;
+    align-horizontal: center;
+    content-align: center middle;
+}
+FormInput > .buttons > Button {
+    width: 20%;
+    margin: 1;
+    align: center middle;
+}
+
+AppFooter {
+    width: 100%;
+    height: 3;
+    background: $background-lighten-2;
+    dock: bottom;
+}
+AppFooter > .buttons {
+    width: 1fr;
+    height: 3;
+    align: right middle;
+}
+AppFooter > .buttons > Button {
+    width: 20%;
+    margin:0;
+}
+DarkSwitch {
+    width: 1fr;
+    align: left middle;
+}
+DarkSwitch > Switch, Content > Static {
+    background: $background-lighten-2;
+}
